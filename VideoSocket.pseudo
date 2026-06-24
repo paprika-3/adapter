@@ -18,3 +18,4 @@ public class VideoSocket {
         someOtherClass.plugDiagnostic(plug);
     }
 }
+
