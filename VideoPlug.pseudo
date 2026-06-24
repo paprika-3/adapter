@@ -1,0 +1,19 @@
+public class HDMIAdapter implements VideoPlug {
+
+    private HDMIPlug hdmi;
+    // Constructor takes HDMIPlug object
+    public HDMIAdapter(HDMIPlug h){
+        this.hdmi = h;
+    }
+
+    // Connect display() to HDMI's digitalDisplay().
+    public display(int width, int height){
+
+       // HDMIPlug stores width and height inside the object.
+        hdmi.width = width;
+        hdmi.height = height;
+
+       // Run HDMI's digitalDisplay() here.
+        hdmi.digitalDisplay();
+    }
+}
